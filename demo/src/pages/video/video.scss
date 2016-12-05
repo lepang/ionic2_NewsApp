@@ -1,0 +1,108 @@
+page-video {
+  //头部
+  .toolbar-background {
+    background: #dddddd;
+  }
+  ion-header ion-toolbar {
+
+    .img {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      left: -90%;
+      border-radius: 50%;
+      top: 2px;
+
+    }
+    .btn {
+      position: relative;
+      border-radius: 5px;
+      width: 80%;
+      height: 35px;
+      bottom: 0px;
+      left: 15%;
+      color: #dadada;
+      background-color: #333333;
+      ion-icon {
+        position: relative;
+        top: 0px;
+      }
+      input {
+        width: 90%;
+        border: none;
+        height: 30px;
+        background-color: #333333;
+      }
+    }
+    .btn2 {
+      position: relative;
+      left: 15%;
+      height: 35px;
+      bottom: 0px;
+      background-color: #dddddd;
+      color: #333333;
+      font-weight: bold;
+    }
+  }
+  //内容
+  .input-wrapper {
+
+    height: 520px;
+
+  }
+  .playItem {
+    position: relative;
+    background-color: #333333;
+  }
+  span {
+    font-weight: bold;
+    color: white;
+  }
+  .title {
+    position: absolute;
+
+    left: 60%;
+    top: 20px;
+  }
+  .zhutu {
+    position: absolute;
+    width: 55%;
+    height: 250px;
+    top: 20px;
+  }
+  .leixing {
+    position: absolute;
+    left: 60%;
+    top: 50px
+
+  }
+
+  .daoyan {
+    position: absolute;
+    left: 60%;
+    top: 80px;
+  }
+  .diqu {
+    position: absolute;
+    left: 60%;
+    top: 110px;
+  }
+
+  .chupinshijian {
+    position: absolute;
+    left: 60%;
+    top: 140px;
+  }
+  .yanyuan {
+    position: absolute;
+    white-space: normal;
+    left: 60%;
+    top: 170px;
+  }
+  .miaoshu {
+    position: absolute;
+    top: 280px;
+    white-space: normal;
+
+  }
+}

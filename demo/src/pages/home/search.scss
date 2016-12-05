@@ -1,0 +1,53 @@
+page-search {
+  .navbar-background {
+    background: white;
+  }
+  ion-header ion-navbar {
+
+    .io {
+      position: relative;
+      font-size: 35px;
+      left: 8px;
+      color: #969696;
+      top: 8px;
+    }
+    .btn {
+      position: relative;
+      border-radius: 5px;
+      width: 80%;
+      height: 35px;
+      bottom: 0px;
+      left: 16px;
+      color: #dadada;
+      background-color: #f6f6f6;
+      ion-icon {
+        position: relative;
+        top: 2px;
+      }
+      input {
+        width: 90%;
+        border: none;
+        height: 30px;
+        background-color: #f6f6f6;
+      }
+    }
+    .btn2 {
+      position: relative;
+      left: 3%;
+      height: 35px;
+      bottom: 0px;
+      background-color: white;
+      color: #adadad;
+    }
+  }
+  //ion-searchbar {
+  //
+  //  position: relative;
+  //  width: 80%;
+  //  left: 10%;
+  //}
+}
+
+
+
+

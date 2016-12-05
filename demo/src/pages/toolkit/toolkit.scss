@@ -1,0 +1,50 @@
+toolkit-page {
+  .toolbar-background {
+    background: #f53d3d;
+  }
+  .toolbar-title-md {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .toolbar-title-ios {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  ion-card {
+
+    ion-row {
+      margin: 30px;
+      label {
+        margin: 10px 10px 10px 0;
+      }
+      .name {
+        width: 180px;
+        height: 36px;
+      }
+      .code {
+        width: 180px;
+        height: 36px;
+      }
+      .xu {
+        margin-left: 5px;
+      }
+      .card-md {
+        background: darkgray;
+      }
+      .card-ios {
+        background: darkgray;
+      }
+      h2 {
+
+        white-space: normal;
+
+      }
+
+    }
+  }
+}

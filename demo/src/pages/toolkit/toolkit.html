@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>工具箱</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-col>
+      <button ion-button block clear (click)="light()">手电筒</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button block clear (click)="barcode()">扫码</button>
+    </ion-col>
+
+
+    <ion-col>
+      <button ion-button block clear (click)="vibration()">震动</button>
+    </ion-col>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <label>公司名称</label>
+      <select id="code" class="name" [(ngModel)]="name">
+        <option value="sf">顺丰</option>
+        <option value="sto">申通</option>
+        <option value="yt">圆通</option>
+        <option value="yd">韵达</option>
+        <option value="zjs">宅急送</option>
+        <option value="yzgn">邮政</option>
+        <option value="tt">天天</option>
+        <option value="ems">EMS</option>
+        <option value="zto">中通</option>
+        <option value="ht">汇通</option>
+        <option value="qt">全峰</option>
+        <option value="db">德邦</option>
+        <option value="gt">国通</option>
+        <option value="jd">京东快递</option>
+      </select>
+    </ion-row>
+
+
+    <ion-row>
+      <label>快递单号</label>
+      <input placeholder="请输入您的快递单号" id="code" class="code" [(ngModel)]="num">
+      <button class="cx" clear (click)="searchExpress()">查询</button>
+    </ion-row>
+
+    <ion-row *ngFor="let kuaidi of kuaidiData">
+      <h2>{{kuaidi.detail}}</h2>
+      <h2>{{kuaidi.reason}}</h2>
+      <h2>{{kuaidi.datetime}}</h2>
+      <h2>{{kuaidi.remark}}</h2>
+
+    </ion-row>
+
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <img src={{picture}} class="img" menuToggle>
+    <button class="btn" icon-left>
+      <ion-icon name="search"></ion-icon>
+      <input type="text" placeholder="搜你想搜的视频" [(ngModel)]="VideoName">
+    </button>
+    <button class="btn2" (click)="search()">搜索</button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content refreshingSpinner="circles" refreshingText="推荐中" pullingIcon="none"></ion-refresher-content>
+  </ion-refresher>
+  <ion-list class="playList">
+    <ion-item class="playItem" *ngFor="let dataContent of dataContents"
+              (click)="showVideo($event, dataContent.playlinks)">
+      <span class="title">作品：{{dataContent.title}}</span>
+      <span class="leixing">类型：{{dataContent.tag}}</span>
+      <span class="yanyuan">演员：{{dataContent.act}}</span>
+      <span class="chupinshijian">出品时间：{{dataContent.year}}</span>
+      <span class="diqu">地区：{{dataContent.area}}</span>
+      <span class="daoyan">导演：{{dataContent.dir}}</span>
+      <span class="miaoshu">简介：{{dataContent.desc}}</span>
+      <img class="zhutu" src={{dataContent.cover}} alt="">
+    </ion-item>
+  </ion-list>
+</ion-content>

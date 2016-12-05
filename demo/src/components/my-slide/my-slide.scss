@@ -1,0 +1,25 @@
+$slide-height-small: 35px;
+$slide-height-large: 50px;
+
+.slide-title {
+  width: 100%;
+  height: $slide-height-small;
+  /*color: #666666;*/
+  color: black;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.slide-title-unit {
+  padding-bottom: 8px;
+  font-size: 16px;
+  height: $slide-height-small;
+  line-height: $slide-height-small;
+
+}
+
+.slide-title-active {
+  /*color: map_get($colors, primary);*/
+  color: red;
+  /*border-bottom: 3px solid map_get($colors, primary);*/
+}

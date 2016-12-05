@@ -1,0 +1,75 @@
+page-login {
+
+  input {
+    position: relative;
+    border-radius: 20px;
+    width: 90%;
+    height: 50px;
+
+    left: 4.5%;
+    border-color: pink;
+    margin-bottom: 20px;
+
+  }
+  .loginBtn {
+    position: relative;
+    height: 50px;
+    width: 90%;
+    background-color: pink;
+    font-style: bold;
+    color: white;
+    border-radius: 20px;
+    left: 4.5%;
+  }
+
+  .yan {
+    position: relative;
+    left: 67%;
+    color: black;
+    font-style: bold;
+    background: white;
+    bottom: 52px;
+  }
+  .sp4 {
+    position: absolute;
+    left: 23%;
+    top: 400px;
+  }
+  .img1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 60%;
+    top: 450px;
+    border-radius: 50%;
+  }
+  .img2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 32%;
+    top: 450px;
+    border-radius: 50%;
+  }
+
+  .closeIcon {
+    font-size: 50px;
+    color: black;
+    padding: 5px 20px;
+  }
+  //提示框
+  .toast-container {
+    background: white;
+    .toast-message {
+      background-color: red;
+      text-align: center;
+      margin: 10px;
+      border-radius: 15px;
+      font-style: bold;
+    }
+
+  }
+  .neirong {
+    margin-top: 30%;
+  }
+}

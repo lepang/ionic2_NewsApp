@@ -1,0 +1,15 @@
+<ion-content class="neirong">
+  <ion-icon class="closeIcon" name="ios-close-outline" (click)="dismiss()"></ion-icon>
+
+
+  <input type="text" placeholder="  手机号" [(ngModel)]="phoneNum">
+  <button class="yan" (click)="sendSMS()" disabled="{{buttonDisable}}"> | 发送验证码</button>
+  <input type="password" placeholder="  请输入验证码" [(ngModel)]="password" value="">
+
+
+  <button class="loginBtn" block (click)="login()">登陆</button>
+
+  <span class="sp4">------------ 更多登陆方式 ------------</span>
+  <img src="images/weixin.jpg" alt="" class="img1">
+  <img src="images/qq.jpg" alt="" class="img2">
+</ion-content>

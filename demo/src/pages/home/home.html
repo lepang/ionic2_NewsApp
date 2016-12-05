@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar>
+
+
+    <!--<label>今日头条</label>
+
+  <button class="btn" ion-button icon-left color="light"  (click)="enterPage()">
+    <ion-icon name="search"></ion-icon>
+    <span>搜你想搜的</span>
+  </button>-->
+    <img src={{picture}} class="img" menuToggle>
+
+
+    <label class="biaoti">头条新闻</label>
+    <ion-icon class="icon" name="search" (click)="enterPage()"></ion-icon>
+
+  </ion-navbar>
+
+
+  <my-slide (slideClick)="onSlideClick($event)" [slides]="pageSlides" [pageNumber]="6"></my-slide>
+
+
+</ion-header>
+
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content refreshingSpinner="circles" refreshingText="推荐中" pullingIcon="none"></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list class="item" style="padding-right:15px">
+    <ion-item *ngFor="let homeArticle of homeArticles" (click)="showArticle($event, homeArticle.url)">
+
+
+      <h2>{{homeArticle.title}}</h2>
+      <span> {{homeArticle.author_name}} </span>
+      <span class="date"> {{homeArticle.date}}</span>
+
+      <div class="box"><img src={{homeArticle.picture3}}></div>
+
+
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
