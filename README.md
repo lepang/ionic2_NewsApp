@@ -1,3 +1,7 @@
 # ionic2_NewsApp
-该项目是基于ionic2的新闻类客户端,该项目是我边学边做的，所以写的比较乱。
- ![image](https://github.com/chenwenpeng/ionic2_NewsApp/images/1.jpg)
+  小项目图片展示
+ ![image](https://github.com/chenwenpeng/ionic2_NewsApp/tree/master/images/1.jpg)
+  ![image](https://github.com/chenwenpeng/ionic2_NewsApp/tree/master/images/2.jpg)
+   ![image](https://github.com/chenwenpeng/ionic2_NewsApp/tree/master/images/3.jpg)
+    ![image](https://github.com/chenwenpeng/ionic2_NewsApp/tree/master/images/4.jpg)
+     ![image](https://github.com/chenwenpeng/ionic2_NewsApp/tree/master/images/5.jpg)
